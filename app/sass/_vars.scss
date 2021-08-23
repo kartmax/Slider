@@ -1,0 +1,24 @@
+@import "bourbon";
+
+//var font-family
+$default-font: 'raleway', sans-serif;
+
+// var for settings fonts
+$baseSizeFont: 16px;
+$lineheight: 1.7;
+
+//var colors
+$accent: #f57500; 
+$text-color: #333;
+$dark: #303030;
+$deep: #252525;
+$color-placholder: gray;
+
+//var width
+$min-width: 320px;
+$max-width: 1440px;
+
+// var universal
+$size: 75px;
+$size-sm: 58px;
+$border-opacity: .1;

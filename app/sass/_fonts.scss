@@ -1,0 +1,17 @@
+@import "bourbon";
+
+
+//Roboto
+@include font-face("roboto", "../fonts/Roboto/Roboto-Medium", 500, $file-formats: ttf);
+
+//Raleway
+@include font-face("raleway", "../fonts/Raleway/Raleway-Light", 300, $file-formats: ttf);
+@include font-face("raleway", "../fonts/Raleway/Raleway-Regular", 400, $file-formats: ttf);
+@include font-face("raleway", "../fonts/Raleway/Raleway-Medium", 500, $file-formats: ttf);
+@include font-face("raleway", "../fonts/Raleway/Raleway-SemiBold", 600, $file-formats: ttf);
+@include font-face("raleway", "../fonts/Raleway/Raleway-Bold", 700, $file-formats: ttf);
+@include font-face("raleway", "../fonts/Raleway/Raleway-ExtraBold", 800, $file-formats: ttf);
+
+//Oswald
+@include font-face("oswald", "../fonts/Oswald/Oswald-Medium", 500, $file-formats: ttf);
+@include font-face("oswald", "../fonts/Oswald/Oswald-Bold", 700, $file-formats: ttf);

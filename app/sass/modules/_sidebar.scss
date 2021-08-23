@@ -1,0 +1,113 @@
+.home-header__content {
+    height: 100%;
+}
+
+.home-aside {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    padding-top: $size;
+    width: $size;
+    height: calc(100% - #{$size});
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+        padding-top: $size-sm;
+        width: $size-sm;
+        height: calc(100% - #{$size-sm});
+    }
+
+    @media screen and (max-width: 992px) and (orientation: landscape) {
+        height: calc(500px - #{$size});
+    }
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+        height: calc(500px - #{$size-sm});
+    }
+}
+
+.home-aside__decoration {
+    flex: 1 0 auto; 
+    width: 100%;   
+    background-image: url(../img/decor-lines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .25;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+}
+
+.home-aside__soc {
+    flex: 1 0 auto;
+}
+
+.home-aside__share-icon {
+    background-color: $accent;
+    width: $size;
+    flex: 0 0 $size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        width: $size-sm;
+        flex: 0 0 $size-sm;
+    }
+
+    svg {
+        fill: #fff;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.home-aside__soc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-aside__soc-items {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+.soc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba($color: #fff, $alpha: $border-opacity);
+    border-bottom: 1px solid transparent;
+    margin-top: -1px;
+    transition: background 0.5s ease-out;
+    
+    &:last-child {
+        border: 1px solid rgba($color: #fff, $alpha: $border-opacity);
+    }
+
+    &:hover {
+        background-color: $accent;
+
+        svg {
+            fill: rgba($color: #fff, $alpha: 1);
+        }
+    }
+
+    svg {
+        fill: rgba($color: #fff, $alpha: 0.3);
+        width: 15px;
+        height: 15px;
+        transition: fill 0.5s ease-out;
+    }
+}
+

@@ -1,0 +1,26 @@
+//Mixin to calculate REM
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+// Mixin to response value propery
+@mixin responseValue($prop) {
+  #{$prop} : 75px;
+  @media only screen and (max-width: 768px) {
+    #{$prop} : 58px;
+  }
+}
+
+
+//Mixin to sprite png url
+//@include sprite($icon-search); - так вставлять картинку с спрайта
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/#{$sprite-image});
+}

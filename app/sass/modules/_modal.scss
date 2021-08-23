@@ -1,0 +1,49 @@
+.modal {
+    z-index: 1000;
+    position: absolute;
+}
+
+.micromodal-slide {
+
+}
+
+.modal__overlay {
+
+}
+
+.modal__container {
+    background-color: lighten($color: $deep, $amount: 6);
+    box-shadow: 0 0 0 8px rgba($color: #fff, $alpha: 0.1);
+    border-radius: 0 ;
+}
+
+.modal__header {
+    text-align: center;
+}
+
+.modal__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: oswald;
+    font-weight: 400;
+    width: 100%;
+}
+
+.modal__close {
+    color: #fff;
+    opacity: .25;
+    cursor: pointer;
+    transition: opacity .25s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.modal__input {
+    margin-bottom: 10px;
+}
+
+.modal__footer {
+    text-align: center;
+}

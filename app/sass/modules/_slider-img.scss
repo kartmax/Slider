@@ -1,0 +1,30 @@
+.slider-img {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 75%;
+
+    &::before {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.45);
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.slider-img__slide {
+    overflow: hidden;
+    height: 100%;
+}   
+
+.slider-img__bg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}

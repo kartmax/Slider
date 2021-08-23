@@ -1,0 +1,19 @@
+.slider-gear {
+    z-index: 2;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: calc(50% - 30px);
+    right: calc(23.5% - 250px);
+    transform: translateY(-50%);
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: rgba($color: #fff, $alpha: .04)
+    }
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
+}

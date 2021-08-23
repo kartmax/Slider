@@ -1,0 +1,20 @@
+.form-input {
+    @include fontSize(16px);
+    font-family: $default-font;
+    font-weight: 300;
+    display: block;
+    background-color: $dark;
+    border: 1px solid lighten($color: $dark, $amount: 7);
+    padding: 15px 20px;
+    min-width: 280px;
+    color: #fff;
+    transition: border .25s ease-in;
+
+    &:focus {
+        border: 1px solid lighten($color: $dark, $amount: 20);
+    }
+}
+
+textarea.form-input {
+    min-height: 100px;
+}

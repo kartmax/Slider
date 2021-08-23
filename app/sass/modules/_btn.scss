@@ -1,0 +1,43 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: rgba($color: $accent, $alpha: 0);
+  color: #fff;
+  @include fontSize(12px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 26px;
+  cursor: pointer;
+  overflow: hidden;
+
+  @media only screen and (max-width: 480px) {
+    padding: 12px 15px;
+  }
+
+  &:hover {
+    &::after {
+      left: 100%;
+    }
+  }
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s ease-out;
+  }
+
+  &::before {
+    z-index: -2;
+    background-color: rgba($color: $dark, $alpha: 1.0);
+  }
+  &::after {
+    z-index: -1;
+    background-color: rgba($color: $accent, $alpha: 1.0);
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Слайдер</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/app-e9583581fe.min.css">
+
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<div class="hidden" id="cursor"></div>
+
+	<!-- Header -->
+	<header class="home-header">
+
+		<div class="top-line">
+			<a href="#" class="logo">
+				<span class="logo__img-wrapper">
+					<img src="img/logo.svg" alt="Киевавто">
+				</span>
+				<span class="logo__text">Киевавто</span>
+			</a>
+			<div class="top-line__decoration"></div>
+			<div class="top-line__contacts">
+				Телефон: <a href="tel:777-55-22"><span class="top-line__numbers">777-55-22</span></a>
+				<span class="top-line__separator"></span>
+				<span class="top-line__adress">Адрес:
+					<span class="top-line__text">ул. Оболонская, 52</span>
+				</span>
+			</div>
+			<div class="top-line__decoration"></div>
+			<div class="menu-button-container">
+				<a href="#" class="menu-button"></a>
+			</div>
+		</div>
+
+		<div class="home-header__content">
+
+			<aside class="home-aside">
+				<div class="home-aside__decoration"></div>
+				<div class="home-aside__soc">
+					<div class="home-aside__soc-items">
+						<a href="#" class="soc-item" target="_blank"><svg class="icon fb">
+								<use xlink:href="#fb"></use>
+							</svg></a>
+						<a href="#" class="soc-item" target="_blank"><svg class="icon inst">
+								<use xlink:href="#inst"></use>
+							</svg></a>
+						<a href="#" class="soc-item" target="_blank"><svg class="icon tm">
+								<use xlink:href="#tm"></use>
+							</svg></a>
+						<a href="#" class="soc-item" target="_blank"><svg class="icon tw">
+								<use xlink:href="#tw"></use>
+							</svg></a>
+					</div>
+				</div>
+				<div class="home-aside__share-icon"><svg class="icon share">
+						<use xlink:href="#share"></use>
+					</svg>
+				</div>
+			</aside>
+
+			<div class="slider-container">
+
+				<!-- start slider text -->
+				<div class="slider-text">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slider-text__slide">
+							<h2 class="slider-text__heading">
+								подбор автомобиля <span>бизнес</span> класса
+							</h2>
+							<p class="slider-text__desc">
+								Подбор автомобиля бизнес класса от любого именитого производителя с широким выбором
+								комлектаций.
+							</p>
+							<button data-micromodal-open='modal-1' class="btn slider-text__button">оставить заявку</button>
+						</div>
+						<div class="swiper-slide slider-text__slide">
+							<h2 class="slider-text__heading">
+								индивидуальный подход <span>к каждому</span> клиенту
+							</h2>
+							<p class="slider-text__desc">
+								Будьте уверены что при подбере автомобиля будут учтены все ваши индивидульные
+								потребности и пожелания.
+							</p>
+							<button data-micromodal-open='modal-1' class="btn slider-text__button">оставить заявку</button>
+						</div>
+						<div class="swiper-slide slider-text__slide">
+							<h2 class="slider-text__heading">
+								широкий выбор авто <span>под любой</span> стиль жизни
+							</h2>
+							<p class="slider-text__desc">
+								У нас вы сможете приобрести автомобиль, который будет соответствовать вашему стилю
+								жизни.
+							</p>
+							<button data-micromodal-open='modal-1' class="btn slider-text__button">оставить заявку</button>
+						</div>
+					</div>
+				</div>
+				<!-- end slider text -->
+
+				<!-- start slider img -->
+				<div class="slider-img">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slider-img__slide">
+							<div class="slider-img__bg" data-swiper-parallax="20%"
+								style="background-image: url(img/avto_1.jpeg);"></div>
+						</div>
+						<div class="swiper-slide slider-img__slide">
+							<div class="slider-img__bg" data-swiper-parallax="20%"
+								style="background-image: url(img/avto_2.jpeg);"></div>
+						</div>
+						<div class="swiper-slide slider-img__slide">
+							<div class="slider-img__bg" data-swiper-parallax="20%"
+								style="background-image: url(img/avto_3.jpeg);"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end slider img -->
+
+				<!-- start slider bottom -->
+				<div class="slider-bottom">
+					<div class="slider-share">
+						<div class="slider-share__items">
+							<a href="#" class="soc-item slider-share__item" target="_blank"><svg class="icon fb">
+									<use xlink:href="#fb"></use>
+								</svg></a>
+							<a href="#" class="soc-item slider-share__item" target="_blank"><svg class="icon inst">
+									<use xlink:href="#inst"></use>
+								</svg></a>
+							<a href="#" class="soc-item slider-share__item" target="_blank"><svg class="icon tw">
+									<use xlink:href="#tw"></use>
+								</svg></a>
+						</div>
+					</div>
+
+					<div class="slider-pagination">
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<div class="slider-scrollbar">
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="slider-navigation">
+						<div class="slider-navigation__container">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end slider bottom -->
+
+				<div class="slider-pagination-count">
+					<span class="current">01</span> / <span class="total"></span>
+				</div>
+
+				<div class="slider-pagination-current"><span class="slider-pagination-current__num">01</span><span class="slider-pagination-current__dot">.</span></div>
+
+				<div class="slider-gear">
+					<svg class="icon settings"><use xlink:href="#settings"></use></svg>
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+
+	<script src="js/scripts-2a850a0c10.min.js"></script>
+
+	<!-- svg sprite -->
+	<div style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"
+			style="position:absolute">
+			<symbol id="fb" viewBox="0 0 24 24">
+				<path
+					d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z">
+				</path>
+			</symbol>
+
+			<symbol id="inst" viewBox="0 0 512.00096 512.00096">
+				<path
+					d="M373.406 0H138.594C62.172 0 0 62.172 0 138.594V373.41C0 449.828 62.172 512 138.594 512H373.41C449.828 512 512 449.828 512 373.41V138.594C512 62.172 449.828 0 373.406 0zM256 395.996c-77.195 0-139.996-62.8-139.996-139.996S178.804 116.004 256 116.004 395.996 178.804 395.996 256 333.196 395.996 256 395.996zM399.344 149.02c-22.813 0-41.367-18.555-41.367-41.368s18.554-41.37 41.367-41.37 41.37 18.558 41.37 41.37-18.558 41.368-41.37 41.368zm0 0">
+				</path>
+				<path
+					d="M256 146.02c-60.64 0-109.98 49.335-109.98 109.98 0 60.64 49.34 109.98 109.98 109.98 60.645 0 109.98-49.34 109.98-109.98 0-60.645-49.335-109.98-109.98-109.98zm0 0M399.344 96.3c-6.258 0-11.352 5.095-11.352 11.352 0 6.258 5.094 11.352 11.352 11.352 6.261 0 11.355-5.09 11.355-11.352 0-6.261-5.094-11.351-11.355-11.351zm0 0">
+				</path>
+			</symbol>
+
+			<symbol id="share" viewBox="0 22 512 511">
+				<path
+					d="M512 233.82L299.223.5v139.203h-45.239C113.711 139.703 0 253.414 0 393.687v73.77l20.094-22.02a360.573 360.573 0 0 1 266.324-117.5h12.805v139.204zm0 0">
+				</path>
+			</symbol>
+
+			<symbol id="tm" viewBox="0 0 24 24">
+				<path
+					d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z">
+				</path>
+			</symbol>
+
+			<symbol id="tw" viewBox="0 0 512 512">
+				<path
+					d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z">
+				</path>
+			</symbol>
+
+			<symbol id="settings" viewBox="0 0 512 512">
+				<path d="M482 256c0-4.898-.162-9.85-.483-14.791l27.511-25.177-1.59-8.242a259.36 259.36 0 0 0-7.967-30.896 259.367 259.367 0 0 0-11.717-29.683l-3.558-7.602-37.041-4.197a227.673 227.673 0 0 0-17.405-23.92l7.46-36.553-6.129-5.732a259.293 259.293 0 0 0-24.607-20.314 259.341 259.341 0 0 0-26.926-17.127l-7.347-4.059-32.402 18.36a225.109 225.109 0 0 0-28.194-9.154L296.178 3.004l-8.33-1.033C277.31.663 266.595 0 256 0s-21.31.663-31.848 1.971l-8.33 1.033-15.427 33.909a225.326 225.326 0 0 0-28.194 9.154l-32.402-18.36-7.347 4.059a259.213 259.213 0 0 0-26.925 17.126 259.343 259.343 0 0 0-24.608 20.315l-6.129 5.732 7.46 36.553a227.218 227.218 0 0 0-17.405 23.921l-37.041 4.196-3.558 7.602a259.526 259.526 0 0 0-11.717 29.681 259.385 259.385 0 0 0-7.967 30.9l-1.59 8.24 27.511 25.177A228.6 228.6 0 0 0 30 256c0 4.899.162 9.849.483 14.791l-27.51 25.177 1.59 8.24a259.08 259.08 0 0 0 7.967 30.899 259.357 259.357 0 0 0 11.717 29.682l3.558 7.602 37.041 4.196a227.36 227.36 0 0 0 17.405 23.921l-7.46 36.553 6.129 5.732a259.293 259.293 0 0 0 24.607 20.314 259.341 259.341 0 0 0 26.926 17.127l7.347 4.059 32.402-18.36a225.215 225.215 0 0 0 28.194 9.154l15.427 33.907 8.329 1.034C234.687 511.337 245.401 512 256 512s21.313-.663 31.849-1.972l8.329-1.034 15.427-33.907a225.22 225.22 0 0 0 28.194-9.154l32.402 18.36 7.347-4.059a259.213 259.213 0 0 0 26.925-17.126 259.343 259.343 0 0 0 24.608-20.315l6.129-5.732-7.46-36.553a227.53 227.53 0 0 0 17.405-23.92l37.041-4.197 3.558-7.602a259.331 259.331 0 0 0 11.716-29.681 259.543 259.543 0 0 0 7.968-30.898l1.59-8.241-27.511-25.178A228.6 228.6 0 0 0 482 256zm-392 0c0-91.532 74.468-166 166-166s166 74.468 166 166-74.468 166-166 166S90 347.532 90 256z"></path>
+			</symbol>
+		</svg>
+	</div>
+	<!-- svg sprite end -->
+
+	<!-- modal window -->
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+			  <h2 class="modal__title" id="modal-1-title">Оставить заявку</h2>
+			  <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+			</header>
+	  
+			<form action="#">
+				<main class="modal__content">
+					<input class="form-input modal__input" type="text" name="KV-Name" placeholder="Ваше имя...">
+					<input class="form-input modal__input" type="text" name="KV-Phone" placeholder="Ваш телефон...">
+					<textarea class="form-input modal__input" name="message" placeholder="Сообщение"></textarea>
+				</main>
+				<div class="modal__footer"><button class="btn">Отправить</button></div>
+			</form>
+	  
+		  </div>
+		</div>
+	  </div>
+	<!-- end modal window -->
+
+</body>
+
+</html>

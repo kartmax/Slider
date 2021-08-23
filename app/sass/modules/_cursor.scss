@@ -1,0 +1,27 @@
+#cursor {
+    z-index: 100000;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: $accent;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-out, transform 0.4s cubic-bezier(.52,-0.94,.65,2.06), background-color 0.9s ease-out, opacity 0.9s ease-out;
+    
+    &.active {
+        transform: scale(3.4);
+        background-color: rgba($color: #fff, $alpha: .1);
+        border: 1px solid $accent;
+    }
+
+    &.hidden {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }   
+}
